@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" name="" id="product">
+    <button onclick="XemGia()">Xem giá</button>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+    function XemGia() {
+        let product = document.getElementById("product").value;
+        switch (product) {
+            case "Ổi":
+                document.getElementById("result").innerHTML = "20000 VNĐ/kg";
+                break;
+            case "Dưa Hấu":
+                document.getElementById("result").innerHTML = "20000 VNĐ/kg";
+                break;
+            case "Táo":
+                document.getElementById("result").innerHTML = "30000 VNĐ/kg";
+                break;
+            case "Xoài":
+                document.getElementById("result").innerHTML = "30000 VNĐ/kg";
+                break;
+            case "Cam":
+                document.getElementById("result").innerHTML = "40000 VNĐ/kg";
+                break;
+            case "Chôm Chôm":
+                document.getElementById("result").innerHTML = "40000 VNĐ/kg";
+                break;
+            case "Măng Cụt":
+                document.getElementById("result").innerHTML = "50000 VNĐ/kg";
+                break;
+            default:
+                document.write("Vui lòng nhập lại sản phẩm");
+        } 
+    }
+</script>
